@@ -3,7 +3,7 @@
 // =========================
 
 let stages;
-fetch("https://bachelor-6.onrender.com/flowerInsect", { method: "GET" })
+fetch("https://bachelor-7.onrender.com/flowerInsect", { method: "GET" })
   .then((u) => u.json())
   .then((json) => {
     stages = json;
@@ -134,7 +134,7 @@ async function sendWithRetry(data, retries = 5) {
   
   for (let i = 0; i < retries; i++) {
     try {
-      const res = await fetch("https://bachelor-6.onrender.com/save_results", {
+      const res = await fetch("https://bachelor-7.onrender.com/save_results", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
